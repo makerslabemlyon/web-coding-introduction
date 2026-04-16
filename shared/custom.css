@@ -1,0 +1,69 @@
+#logo {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  max-width: 200px;
+}
+
+code {
+  border-radius: 4px;
+  text-wrap: wrap;
+}
+
+:not(pre) > code {
+  font-family: "Source Code Pro", monospace;
+  border: 1px solid #baacab;
+  padding: 2px 4px;
+  font-size: 14px;
+  color: #ff5151;
+  background-color: #ede9e9;
+  margin: 0 2px;
+  white-space: pre;
+  font-size: 0.8em;
+}
+
+.reveal .code-wrapper code {
+  text-wrap: wrap
+}
+
+/* Copy to clipboard */
+
+
+pre .tools {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	display: none !important;
+}
+pre .tools .copy {
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: color .3s ease;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+pre .tools .copy::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f0c5";
+}
+pre .tools .copy.copied::after {
+  content: "";
+}
+
+pre .tools .copy:hover {
+  color: white;
+}
+pre:hover .tools {
+  display: block !important;
+}
+
+.reveal small {
+  vertical-align: middle;
+}
