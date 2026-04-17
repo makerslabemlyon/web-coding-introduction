@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>What Makes Up a Web Page?</title>
+
+    <link rel="stylesheet" href="../../shared/dist/reset.css" />
+    <link rel="stylesheet" href="../../shared/dist/reveal.css" />
+    <link rel="stylesheet" href="../../shared/dist/theme/solarized.css" />
+    <link rel="stylesheet" href="../../shared/custom.css" />
+    <link rel="icon" href="../../shared/img/cdweb.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <script src="../../shared/custom.js" defer></script>
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../../shared/plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <img id="logo" src="../../shared/img/logo_makers_lab.png" alt="" />
+
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h3>What Makes Up a Web Page?</h3>
+          <p class="fragment">3 different languages to discover:</p>
+          <ul>
+            <li class="fragment">
+              <strong>HTML:</strong>
+              <span class="fragment">
+                for the
+                <strong>structure</strong>
+                and
+                <strong>content</strong>
+                .
+              </span>
+            </li>
+            <li class="fragment">
+              <strong>CSS:</strong>
+              <span class="fragment">
+                for the
+                <strong>style</strong>
+                - visual appearance & animation.
+              </span>
+            </li>
+            <li class="fragment">
+              <strong>JavaScript:</strong>
+              <span class="fragment">
+                for
+                <strong>interactivity</strong>
+                - dynamic behavior.
+              </span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <h3>Web Languages</h3>
+          </section>
+          <section>
+            <h3>HTML</h3>
+            <p class="fragment">HyperText Markup Language.</p>
+            <ul>
+              <li class="fragment">Manages the structure and content of the page.</li>
+              <li class="fragment">Defines headings, paragraphs, images, links, etc.</li>
+              <li class="fragment">Default structure can be modified via CSS.</li>
+              <li class="fragment">Targets both human visitors and search engine robots.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>HTML - Example</h3>
+            <pre><code class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Main Title&lt;/h1&gt;
+    &lt;p&gt;Paragraph of text.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+          </section>
+          <section>
+            <h3>CSS</h3>
+            <p class="fragment">Cascading Style Sheets.</p>
+            <ul>
+              <li class="fragment">Controls the visual appearance of HTML elements.</li>
+              <li class="fragment">Modifies layout, colors, fonts, transparency, etc.</li>
+              <li class="fragment">Adds visual animations.</li>
+              <li class="fragment">Creates an attractive and consistent design.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>CSS - Example</h3>
+            <pre><code class="css">
+h1 {
+  color: blue;
+  font-size: 24px;
+}
+</code></pre>
+          </section>
+          <section>
+            <h3>JavaScript</h3>
+            <p class="fragment">Manages the page's behavior.</p>
+            <ul>
+              <li class="fragment">Adds dynamic functionality: forms, animations, etc.</li>
+              <li class="fragment">Allows retrieving real-time data.</li>
+              <li class="fragment">Modifies page content interactively.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>JavaScript - Example</h3>
+            <pre><code class="javascript">
+document.getElementById('logo').style.maxWidth = '50px';
+</code></pre>
+            <p class="fragment">
+              Try copying this line of code into the browser
+              <strong>console</strong>
+              , then press Enter.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <h3>Tools for Writing Code</h3>
+          <p class="fragment">To write code, you need a text editor.</p>
+          <ul>
+            <li class="fragment">Examples: Visual Studio Code, Sublime Text, Atom, etc.</li>
+            <li class="fragment">Modern tools: syntax highlighting, auto-completion, etc.</li>
+            <li class="fragment">Extensions to facilitate code writing.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Best Practices</h3>
+          <ul>
+            <li class="fragment">Search for and use available tools.</li>
+            <li class="fragment">Avoid reinventing the wheel.</li>
+            <li class="fragment">Create on your own while making use of existing tools.</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Let's Start Coding!</h3>
+          <p>We will now write our first lines of HTML code.</p>
+          <p>
+            👉
+            <a href="../../1.2-create-content-with-html/1.2.1-from-text-to-html/index.html">From Text to HTML</a>
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="../../shared/dist/reveal.js"></script>
+    <script src="../../shared/plugin/notes/notes.js"></script>
+    <script src="../../shared/plugin/markdown/markdown.js"></script>
+    <script src="../../shared/plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+      });
+    </script>
+  </body>
+</html>

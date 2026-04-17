@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>TP - Dissecting a Web Page</title>
+
+    <link rel="stylesheet" href="../../shared/dist/reset.css" />
+    <link rel="stylesheet" href="../../shared/dist/reveal.css" />
+    <link rel="stylesheet" href="../../shared/dist/theme/solarized.css" />
+    <link rel="stylesheet" href="../../shared/custom.css" />
+    <link rel="icon" href="../../shared/img/cdweb.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <script src="../../shared/custom.js" defer></script>
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../../shared/plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <img id="logo" src="../../shared/img/logo_makers_lab.png" alt="" />
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>
+            <h3>TP - Dissecting a Web Page</h3>
+          </section>
+          <section>
+            <h3>Objectives</h3>
+            <p>Let's access a web page and try to understand how it works</p>
+          </section>
+          <section>
+            <h3>Some Questions</h3>
+            <!-- <p class="fragment">Let's ask ourselves some questions:</p> -->
+            <p class="fragment">What is ...</p>
+            <ul>
+              <li class="fragment">a web page?</li>
+              <li class="fragment">a website?</li>
+              <li class="fragment">a web browser?</li>
+              <li class="fragment">the web?</li>
+            </ul>
+            <p class="fragment">Let's explore!</p>
+          </section>
+        </section>
+        <!-- Browser -->
+        <section>
+          <section>
+            <h3>Web Browser</h3>
+            <p class="fragment">A web browser is</p>
+            <ul>
+              <li class="fragment"><em>a software</em></li>
+              <li class="fragment">
+                <em>an interface</em>
+                <span class="fragment">between the user and online content.</span>
+              </li>
+            </ul>
+            <p class="fragment">The browser allows us to</p>
+            <ul>
+              <li class="fragment">View a web page</li>
+              <li class="fragment">Explore the web</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Main Web Browsers</h3>
+            <ul>
+              <li class="fragment">Google Chrome</li>
+              <li class="fragment">Mozilla Firefox</li>
+              <li class="fragment">Microsoft Edge</li>
+              <li class="fragment">Safari</li>
+            </ul>
+            <p class="fragment">They can be used on different devices and platforms.</p>
+          </section>
+          <section>
+            <h3>How Does a Web Browser Work?</h3>
+            <p class="fragment">
+              The browser allows displaying content accessible to users, from ...
+              <span class="fragment">
+                <strong>computer code</strong>
+                .
+              </span>
+            </p>
+            <p class="fragment">Let's discover how this works.</p>
+          </section>
+        </section>
+        <!-- Source code -->
+        <section>
+          <section>
+            <h3>Source Code</h3>
+            <ol>
+              <li class="fragment">
+                Visit the
+                <a href="https://latoile.em-lyon.com/" target="_blank" rel="noopener noreferrer">
+                  website of
+                  <em>la toile</em>
+                </a>
+              </li>
+              <li class="fragment">Right-click on the page.</li>
+              <li class="fragment">
+                Select
+                <em>"View Page Source"</em>
+                <small>(Google Chrome)</small>
+                or
+                <em>"Page Source"</em>
+                <small>(Mozilla Firefox)</small>
+                .
+              </li>
+              <li class="fragment">
+                Observe the page that opens: it's
+                <strong>HTML code</strong>
+                .
+              </li>
+            </ol>
+            <p class="fragment">
+              This code is complex and difficult to read. So let's start with something simpler.
+            </p>
+          </section>
+          <section>
+            <h3>Explore a Simple Web Page</h3>
+            <ol>
+              <li class="fragment">
+                Visit this
+                <a
+                  href="https://makerslab_emlyon.gitlab.io/cdweb/webpage-introduction/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  example page
+                </a>
+                .
+              </li>
+              <li class="fragment">Display the page source code</li>
+            </ol>
+            <p class="fragment">Here's some code that seems easier to understand.</p>
+            <p class="fragment">We can see the code elements corresponding to each element on the page.</p>
+            <p class="fragment">
+              Explore the main HTML file (index.html) to understand the structure of the page.
+            </p>
+            <p class="fragment">
+              For the rest of our exploration, we're going to call upon
+              <em>an indispensable ally</em>
+              for every developer...
+            </p>
+          </section>
+        </section>
+        <!-- Inspector -->
+        <section>
+          <section>
+            <h3>The Inspector 🕵️‍♂️</h3>
+            <p class="fragment">
+              The inspector is
+              <strong>a tool</strong>
+              of the web browser.
+            </p>
+            <p class="fragment">
+              It allows you to
+              <strong>discover</strong>
+              what's happening
+              <em>"under the hood"</em>
+              .
+            </p>
+            <p class="fragment">To use the inspector:</p>
+
+            <ol>
+              <li class="fragment">Right-click and select "Inspect".</li>
+              <li class="fragment">
+                Use a keyboard shortcut:
+                <ul>
+                  <li>Ctrl + Shift + I on Google Chrome</li>
+                  <li>Ctrl + Shift + C on Mozilla Firefox</li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+          <section>
+            <h3>The Inspector 🕵️‍♂️</h3>
+            <p class="fragment">
+              The inspector allows you to view the HTML code of the page...
+              <span class="fragment">and even modify it!</span>
+            </p>
+          </section>
+        </section>
+
+        <!-- Understanding the code -->
+        <section>
+          <section>
+            <h3>Content</h3>
+            <p class="fragment">
+              As we've seen: the HTML code elements correspond to the different elements on the page.
+            </p>
+            <p class="fragment">The HTML code is responsible for the content of a web page</p>
+            <p class="fragment">
+              To display readable and aesthetic web interfaces, we need to then ...
+              <span class="fragment">
+                add some
+                <strong>style</strong>
+                .
+              </span>
+            </p>
+          </section>
+          <section>
+            <h3>Style</h3>
+            <ol>
+              <li class="fragment">Click the "Add Some Style" button.</li>
+              <li class="fragment">Observe the changes on the page.</li>
+              <li class="fragment">
+                From the inspector, notice what appears in the
+                <em>Styles</em>
+                tab
+              </li>
+            </ol>
+            <p class="fragment">
+              This is
+              <strong>CSS</strong>
+              code.
+            </p>
+            <p class="fragment">CSS allows adding style to a web document</p>
+          </section>
+
+          <section>
+            <h3>Add a Dose of Interactivity</h3>
+            <ol>
+              <li class="fragment">
+                Click on
+                <em>Add a Dose of Interactivity</em>
+                .
+              </li>
+              <li class="fragment">The page now allows you to interact with a to-do list.</li>
+            </ol>
+
+            <p class="fragment">
+              This interactive functionality is made possible through the use of the
+              <em>programming language</em>
+              <strong>JavaScript</strong>
+              .
+            </p>
+            <p class="fragment">JavaScript code allows adding dynamic functionality to a web page.</p>
+          </section>
+          <section>
+            <h3>Find the CSS and JS Code</h3>
+            <p class="fragment">You can access files available on a website via their URL.</p>
+            <ul class="fragment">
+              <li>
+                HTML Code
+                <a
+                  href="https://makerslab_emlyon.gitlab.io/cdweb/webpage-introduction/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  index.html
+                </a>
+              </li>
+              <li>
+                CSS Stylesheet:
+                <a
+                  href="https://makerslab_emlyon.gitlab.io/cdweb/webpage-introduction/style.css"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  style.css
+                </a>
+              </li>
+              <li>
+                JavaScript Code:
+                <a
+                  href="https://makerslab_emlyon.gitlab.io/cdweb/webpage-introduction/script.js"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  script.js
+                </a>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <!-- Conclusion -->
+        <section>
+          <section>
+            <h3>Conclusion</h3>
+            <p>
+              You're discovering new concepts: browser, source code, link, inspector, HTML, CSS, JavaScript,
+              URL…
+            </p>
+            <p>
+              It will take a little time to familiarize yourself with these concepts. Before long, they'll be part of your
+              vocabulary!
+            </p>
+            <p>
+              Let's move on to the next page to get to know these first technical concepts. 👉
+              <a href="../1.1.2-what-makes-a-web-page/index.html">What Makes Up a Web Page?</a>
+            </p>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="../../shared/dist/reveal.js"></script>
+    <script src="../../shared/plugin/notes/notes.js"></script>
+    <script src="../../shared/plugin/markdown/markdown.js"></script>
+    <script src="../../shared/plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+      });
+    </script>
+  </body>
+</html>
